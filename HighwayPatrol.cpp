@@ -1,10 +1,10 @@
-#include "HighwayPatrol.h"
 #include <iostream>
 #include <cassert>
+#include "HighwayPatrol.h"
+#include "Highway.h"
+#include "Vehicle.h"
 
-HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol")
-{
-}
+HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol") {}
 
 HighwayPatrol::~HighwayPatrol() = default;
 
