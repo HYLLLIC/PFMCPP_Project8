@@ -14,9 +14,9 @@ Build/Run often with this task to make sure you're not breaking the code with ea
     it's very easy to mess this task up. 
 
 your task: 
-    0) get familiar with the classes. 
+    0) get familiar with the classes. //done
 
-    1) Fix the include errors. 
+    1) Fix the include errors. //done
 
     2) HighwayPatrol can check the speed of vehicles on the highway. 
         make this happen *without* adding getters to the Highway or Vehicle class 
