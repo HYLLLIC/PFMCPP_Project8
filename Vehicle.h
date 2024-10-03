@@ -20,5 +20,5 @@ protected:
     int speed = 0;
     std::string name;
 
-friend HighwayPatrol;
+    friend HighwayPatrol;
 };
