@@ -5,9 +5,9 @@
 struct SemiTruck : public Vehicle
 {
     SemiTruck(const std::string& n);
-    ~SemiTruck();
+    ~SemiTruck() override;
 
     void pullOver();
     void makeRoadTea();
     
-}
+};
