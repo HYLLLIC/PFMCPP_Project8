@@ -22,13 +22,13 @@ your task:
         make this happen *without* adding getters to the Highway or Vehicle class //done
         and *without* making any private member variables public //done
 
-    3) implement the Highway::addVehicleInternal 
+    3) implement the Highway::addVehicleInternal //initially done
         this function should call the non-evasive member function of the derived class, so use the technique shown in the Casting video.
 
-    4) implement the Highway::removeVehicleInternal
+    4) implement the Highway::removeVehicleInternal //initially done
         this function should call the evasive member function of the derived class, if it has one. use the technique shown in the Casting video.
 
-    5) Add a Truck type
+    5) Add a Truck type //done
         semi-trucks don't evade when they're pulled over, unlike cars and motorcycles.  
         write a member function called 'pullOver' that can be called for this requirement.
         They'll also need a separate member function that can be called when they are added to the highway.  
