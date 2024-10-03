@@ -18,9 +18,9 @@ your task:
 
     1) Fix the include errors. //done
 
-    2) HighwayPatrol can check the speed of vehicles on the highway. 
-        make this happen *without* adding getters to the Highway or Vehicle class 
-        and *without* making any private member variables public
+    2) HighwayPatrol can check the speed of vehicles on the highway. //done
+        make this happen *without* adding getters to the Highway or Vehicle class //done
+        and *without* making any private member variables public //done
 
     3) implement the Highway::addVehicleInternal 
         this function should call the non-evasive member function of the derived class, so use the technique shown in the Casting video.
