@@ -1,7 +1,5 @@
 #include "Car.h"
 
-#include <iostream>
-
 Car::Car(const std::string& n) : Vehicle(n) {}
 Car::~Car() = default;
 

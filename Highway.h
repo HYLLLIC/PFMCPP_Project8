@@ -4,7 +4,6 @@
 #include <algorithm>
 
 struct Vehicle;
-struct HighwayPatrol;
 
 struct Highway
 {

@@ -12,5 +12,4 @@ struct SemiTruck : public Vehicle
 
     void pullOver();
     void makeRoadTea();
-    
 };

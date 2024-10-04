@@ -51,13 +51,8 @@ your task:
     If you see no output after scanning the highway, your program doesn't work as expected and you'll need to figure out why Motorcycles are not triggering the Highway Patrol class when it scans the highway.
  */
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cassert>
-
-#include "HighwayPatrol.h"
 #include "Highway.h"
+#include "HighwayPatrol.h"
 #include "Car.h"
 #include "Motorcycle.h"
 #include "SemiTruck.h"
