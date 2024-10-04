@@ -7,6 +7,9 @@ struct SemiTruck : public Vehicle
     SemiTruck(const std::string& n);
     ~SemiTruck() override;
 
+    SemiTruck(const SemiTruck&) = default;
+    SemiTruck& operator=(const SemiTruck&) = default;
+
     void pullOver();
     void makeRoadTea();
     
