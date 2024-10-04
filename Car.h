@@ -13,6 +13,5 @@ struct Car : public Vehicle
     Car& operator=(const Car&) = default;
 
     void closeWindows();
-
     void tryToEvade() override;
 };

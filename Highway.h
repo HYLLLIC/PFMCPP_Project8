@@ -15,6 +15,7 @@ private:
     void addVehicleInternal(Vehicle* v);
     void removeVehicleInternal(Vehicle* v);
     int speedLimit = 65;
+
     std::vector<Vehicle*> vehicles;
 
     friend struct HighwayPatrol;

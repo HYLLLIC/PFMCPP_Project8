@@ -6,14 +6,13 @@
 struct Vehicle
 {
     Vehicle(const std::string& n);
-    
-    //Special member Functions.  See instruction 9) and note in main()
     virtual ~Vehicle();
+
+    //Special member Functions.  See instruction 9) and note in main()
     Vehicle(const Vehicle&) = default;
     Vehicle& operator=(const Vehicle&) = default;
     
     virtual void setSpeed(int s);
-    
     virtual void tryToEvade();
     
 protected:
