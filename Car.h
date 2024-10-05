@@ -2,8 +2,6 @@
 
 #include "Vehicle.h"
 
-struct Vehicle;
-
 struct Car : Vehicle
 {
     Car(const std::string& s);
