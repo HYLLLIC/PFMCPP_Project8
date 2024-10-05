@@ -4,7 +4,7 @@
 
 struct Vehicle;
 
-struct Car : public Vehicle
+struct Car : Vehicle
 {
     Car(const std::string& s);
     ~Car() override;
