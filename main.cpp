@@ -14,21 +14,21 @@ Build/Run often with this task to make sure you're not breaking the code with ea
     it's very easy to mess this task up. 
 
 your task: 
-    0) get familiar with the classes. 
+    0) get familiar with the classes. //done
 
-    1) Fix the include errors. 
+    1) Fix the include errors. //done
 
-    2) HighwayPatrol can check the speed of vehicles on the highway. 
-        make this happen *without* adding getters to the Highway or Vehicle class 
-        and *without* making any private member variables public
+    2) HighwayPatrol can check the speed of vehicles on the highway. //done
+        make this happen *without* adding getters to the Highway or Vehicle class //done
+        and *without* making any private member variables public //done
 
-    3) implement the Highway::addVehicleInternal 
+    3) implement the Highway::addVehicleInternal //initially done
         this function should call the non-evasive member function of the derived class, so use the technique shown in the Casting video.
 
-    4) implement the Highway::removeVehicleInternal
+    4) implement the Highway::removeVehicleInternal //initially done
         this function should call the evasive member function of the derived class, if it has one. use the technique shown in the Casting video.
 
-    5) Add a Truck type
+    5) Add a Truck type //done
         semi-trucks don't evade when they're pulled over, unlike cars and motorcycles.  
         write a member function called 'pullOver' that can be called for this requirement.
         They'll also need a separate member function that can be called when they are added to the highway.  
@@ -51,10 +51,11 @@ your task:
     If you see no output after scanning the highway, your program doesn't work as expected and you'll need to figure out why Motorcycles are not triggering the Highway Patrol class when it scans the highway.
  */
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cassert>
+#include "Highway.h"
+#include "HighwayPatrol.h"
+#include "Car.h"
+#include "Motorcycle.h"
+#include "SemiTruck.h"
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -120,17 +121,41 @@ int main()
     /*
      construct 2 more Car instances via emplace_back.
      */
+    cars.emplace_back("amethyst");
+    cars.emplace_back("mario");
     
     /*
      now reserve and emplace_back your Trucks and Motorcyles
      */
+    motorcycles.reserve(3);
     
+    motorcycles.emplace_back("toehead joe");
+    motorcycles.emplace_back("fast eddy");
+    motorcycles.emplace_back("faster eddie");
+
+    trucks.reserve(3);
+
+    trucks.emplace_back("bingus");
+    trucks.emplace_back("randall");
+    trucks.emplace_back("schrandall");
     
-    
-    
-    assert(false);
     //add the cars, motorcycles and trucks to the highway using range-based for() loops: for( element : vec ) { ... }
     //be careful to not accidentally make element copies when iterating.
+
+    for( auto& car : cars )
+    {
+        highway.addVehicle(&car);
+    }
+
+    for( auto& motorcycle : motorcycles )
+    {
+        highway.addVehicle(&motorcycle);
+    }
+
+    for( auto& truck : trucks )
+    {
+        highway.addVehicle(&truck);
+    }
     
     HighwayPatrol cop;
     cop.scanHighway(&highway);
